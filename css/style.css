@@ -1,1 +1,38 @@
- g
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    background-color: black;
+}
+ *{
+     box-sizing: border-box;
+
+ }
+ ul{
+     list-style: none;
+ }
+ a{
+     text-decoration: none;
+
+ }
+ 
+ .logo img{
+     height: 50px;
+      
+ }
+ .top {
+    font-size: large;
+    background-color: black;
+    color:blue;
+    display: flex;
+     justify-content: flex-start;
+ }
+
+ .search{
+     display: flex;
+     justify-content: flex-end;
+     margin-left: 30%;
+     height: 10%;
+    margin-top: 2%;
+ }
+  
