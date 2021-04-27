@@ -1,24 +1,50 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
     font-family: poppins;
     background-color: black;
     color: white;
 }
- *{
-     box-sizing: border-box;
 
- }
- ul{
-     list-style: none;
- }
- a{
-     text-decoration: none;
+* {
+    box-sizing: border-box;
 
- }
- .jumbotron-fluid{
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.jumbotron-fluid {
     background-image: url(../images/lib.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
-  }
+}
+
+img {
+    height: 200px;
+    width: 270px;
+}
+
+.col-sm-3 {
+    position: relative;
+    width: 25%;
+    margin-top: 4px;
+}
+
+p .text {
+    display: none;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
