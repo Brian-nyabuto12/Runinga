@@ -3,6 +3,7 @@ body{
     padding: 0px;
     font-family: poppins;
     background-color: black;
+    color: white;
 }
  *{
      box-sizing: border-box;
@@ -15,6 +16,9 @@ body{
      text-decoration: none;
 
  }
- nav{
-     
- }
+ .jumbotron-fluid{
+    background-image: url(../images/lib.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+  }
