@@ -15,6 +15,24 @@ body{
      text-decoration: none;
 
  }
- nav{
-     
+ 
+ .logo img{
+     height: 50px;
+      
  }
+ .top {
+    font-size: large;
+    background-color: black;
+    color:blue;
+    display: flex;
+     justify-content: flex-start;
+ }
+
+ .search{
+     display: flex;
+     justify-content: flex-end;
+     margin-left: 30%;
+     height: 10%;
+    margin-top: 2%;
+ }
+  
