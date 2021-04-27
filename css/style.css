@@ -35,14 +35,16 @@ img {
 .col-sm-3 {
     position: relative;
     width: 25%;
-    margin-top: 4px;
+    margin-top: 10px;
 }
 
-p .text {
+.culture, #text2, #text3, #text4 {
+    position: fixed;
     display: none;
+    width: 20%;
 }
 
-.image {
+.images {
     display: block;
     width: 100%;
     transition: .5s ease;
