@@ -1,11 +1,40 @@
 $(document).ready(function(){
-    $("div.hide").hide();
-
-$("h3").click(function () {
-    $(this).next("div.hide").slideToggle("slow");
+  $(".culture").click(function(){
+    $("#image1").fadeIn(1500);
+    $(".culture").fadeOut(1500);
+  });
+  $("#image1").click(function(){
+    $(".culture").fadeIn(1500);
+    $("#image1").fadeOut(1500);
+  });
+ 
 });
-
-$("button.hide").click(function () {
-    $(this).parents("div.hide").slideToggle("slow");
+$(document).ready(function(){
+  $("#image2").click(function(){
+    $("#text2").fadeIn(1500);
+    $("#image2").fadeOut(1500);
+  });
+  $("#text2").click(function(){
+    $("#image2").fadeIn(1500);
+    $("#text2").fadeOut(1500);
+  });
 });
+$(document).ready(function(){
+  $("#image3").click(function(){
+    $("#text3").fadeIn(1500);
+    $("#image3").fadeOut(1500);
+  });
+  $("#text3").click(function(){
+    $("#image3").fadeIn(1500);
+    $("#text3").fadeOut(1500);
+  });
 });
+$(document).ready(function(){
+  $("#image4").click(function(){
+    $("#text4").fadeIn(1500);
+    $("#image4").fadeOut(1500);
+  });
+  $("#text4").click(function(){
+    $("#image4").fadeIn(1500);
+    $("#text4").fadeOut(1500);
+  });
