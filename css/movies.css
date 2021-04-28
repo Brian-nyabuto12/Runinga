@@ -1,0 +1,30 @@
+
+ * {
+    box-sizing:border-box;
+  }
+  
+   body{
+      background-color: black;
+      padding: 20px;
+      font-family: Arial;
+      }
+      h1,h2{
+        color:green;
+        text-align: center;
+        font-family: fantasy;
+      }
+      nav{
+        color: green;
+      }
+      .card{
+
+        align-content: center;
+        border-radius: 50%;
+    
+      }
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 70%;
+      }
