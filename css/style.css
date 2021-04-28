@@ -1,25 +1,53 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    font-family: poppins;
-    background-color: black;
-}
- *{
-     box-sizing: border-box;
+* {
+    box-sizing:border-box;
+  }
+  
+   body{
+      background-color:black;
+      padding: 20px;
+      font-family: Arial;
+      color: white;
+      }
+    
+      h1,h2{
+        color:green;
+        text-align: center;
+        font-family: fantasy;
+      }
+      nav{
+        color: green;
+      }
+      .home {
+        text-align: center;
+        text-decoration-color: cornflowerblue;
+        font-size: 100%;
+        font-family: "fantasy", sans-serif;
+        padding-top: 100px;
+      }
+      footer {
+        text-align: center;
+        height: 100px;
+        border-radius: 5px;
+      }
 
- }
- ul{
-     list-style: none;
- }
+      .header img{
+          width: 30%;
+          padding-left: 300px;
+          justify-content: center;
+      }
  a{
      text-decoration: none;
 
  }
- 
- .logo img{
-     height: 50px;
-      
- }
+ #searchbar {
+    float: right;
+    padding: 0px;
+    border: none;
+    margin-bottom: 30px;
+    font-size: 20px;
+    width: 40%;
+    
+  }
  .top {
     font-size: large;
     background-color: black;
@@ -35,4 +63,9 @@ body{
      height: 10%;
     margin-top: 2%;
  }
+ 
+ 
+
+ 
+ 
   
