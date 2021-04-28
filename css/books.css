@@ -35,3 +35,6 @@ img {
     transition: .5s ease;
     backface-visibility: hidden;
 }
+button{
+   margin: 5px;
+}
