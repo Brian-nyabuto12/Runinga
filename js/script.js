@@ -38,3 +38,4 @@ $(document).ready(function(){
     $("#image4").fadeIn(1500);
     $("#text4").fadeOut(1500);
   });
+});
