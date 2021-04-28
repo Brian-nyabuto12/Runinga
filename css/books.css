@@ -1,0 +1,37 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    background-color: black;
+    color: white;
+}
+.jumbotron-fluid {
+    background-image: url(../images/library1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+img {
+    height: 200px;
+    width: 270px;
+}
+
+.col-sm-3 {
+    position: relative;
+    width: 25%;
+    margin-top: 10px;
+}
+
+.culture, #text2, #text3, #text4 {
+    position: fixed;
+    display: none;
+    width: 20%;
+}
+
+.images {
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
