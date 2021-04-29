@@ -38,3 +38,14 @@ $(document).ready(function(){
     $("#image4").fadeIn(1500);
     $("#text4").fadeOut(1500);
   });
+});
+$(document).ready(function(){
+  $("#image5").click(function(){
+    $("#text5").fadeIn(1500);
+    $("#image5").fadeOut(1500);
+  });
+  $("#text5").click(function(){
+    $("#image5").fadeIn(1500);
+    $("#text5").fadeOut(1500);
+  });
+});

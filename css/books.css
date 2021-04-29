@@ -1,7 +1,4 @@
 body {
-    margin: 0px;
-    padding: 0px;
-    font-family: poppins;
     background-color: black;
     color: white;
 }
@@ -12,6 +9,9 @@ body {
     height: 200px;
 }
 
+/* h2{
+    color: blue;
+} */
 img {
     height: 200px;
     width: 270px;
@@ -34,4 +34,7 @@ img {
     width: 100%;
     transition: .5s ease;
     backface-visibility: hidden;
+}
+button{
+   margin: 5px;
 }
