@@ -8,14 +8,14 @@ body {
     background-size: cover;
     height: 200px;
 }
-h1{
+h1, h4, h5{
     font-weight: bold;
     text-align: center;
     vertical-align: middle;
     margin: 0px;
 }
-h1, h2{
-    color: red;
+h1, h2, h5{
+    color: goldenrod;
 }
 img {
     height: 290px;
@@ -32,7 +32,7 @@ img {
 }
 .navigation a:hover{
     color: white;
-    background-color: maroon;
+    background-color: goldenrod;
   }
 
 .col-sm-4 {
@@ -55,4 +55,7 @@ img {
 }
 button{
    margin: 5px;
+}
+.checked{
+    color: orange;
 }
