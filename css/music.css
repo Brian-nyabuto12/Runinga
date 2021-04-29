@@ -2,7 +2,7 @@
 
       background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.SP3pSJHZsc8eIXhmm8Qf6AHaEK%26pid%3DApi&f=1);
       background-size: cover;
-      font-size: large;
+      font-size: medium;
       height: 150px;
       background-repeat: no-repeat;
     }
@@ -36,6 +36,10 @@
   position: relative;
   width: 25%;
   margin-top: 10px;
+}
+img {
+  height: 200px;
+  width: 250px;
 }
     
 
