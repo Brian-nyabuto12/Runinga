@@ -2,26 +2,35 @@ body {
     background-color: black;
     color: white;
 }
+
 .jumbotron-fluid {
     background-image: url(../images/library1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
 }
-h1, h4, h5{
+
+h1,
+h4,
+h5 {
     font-weight: bold;
     text-align: center;
     vertical-align: middle;
     margin: 0px;
 }
-h1, h2, h5{
+
+h1,
+h2,
+h5 {
     color: goldenrod;
 }
+
 img {
     height: 290px;
     width: 270px;
 }
-.navigation a{
+
+.navigation a {
     color: white;
     float: left;
     width: 25%;
@@ -30,10 +39,11 @@ img {
     font-size: 20px;
     background: rgb(3, 3, 121);
 }
-.navigation a:hover{
+
+.navigation a:hover {
     color: white;
     background-color: goldenrod;
-  }
+}
 
 .col-sm-4 {
     position: relative;
@@ -41,10 +51,12 @@ img {
     margin-top: 10px;
 }
 
-.culture, #text2, #text3, #text4 {
-    position: fixed;
+.culture,
+#text2,
+#text3,
+#text4 {
+    position: absolute;
     display: none;
-    width: 20%;
 }
 
 .images {
@@ -53,9 +65,12 @@ img {
     transition: .5s ease;
     backface-visibility: hidden;
 }
-button{
-   margin: 5px;
+
+button {
+    display: block;
+    margin: 5px;
 }
-.checked{
+
+.checked {
     color: orange;
 }

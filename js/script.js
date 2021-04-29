@@ -1,32 +1,32 @@
 $(document).ready(function(){
   $(".culture").click(function(){
-    $("#image1").fadeIn(1500);
-    $(".culture").fadeOut(1500);
+    $("#image1").show(1000);
+    $(".culture").hide(1000);
   });
   $("#image1").click(function(){
-    $(".culture").fadeIn(1500);
-    $("#image1").fadeOut(1500);
+    $(".culture").show(1000);
+    $("#image1").hide(1000);
   });
  
 });
 $(document).ready(function(){
   $("#image2").click(function(){
-    $("#text2").fadeIn(1500);
-    $("#image2").fadeOut(1500);
+    $("#text2").show(1000);
+    $("#image2").hide(1000);
   });
   $("#text2").click(function(){
-    $("#image2").fadeIn(1500);
-    $("#text2").fadeOut(1500);
+    $("#image2").show(1000);
+    $("#text2").hide(1000);
   });
 });
 $(document).ready(function(){
   $("#image3").click(function(){
-    $("#text3").fadeIn(1500);
-    $("#image3").fadeOut(1500);
+    $("#text3").show(1000);
+    $("#image3").hide(1000);
   });
   $("#text3").click(function(){
-    $("#image3").fadeIn(1500);
-    $("#text3").fadeOut(1500);
+    $("#image3").show(1000);
+    $("#text3").hide(1000);
   });
 });
 $(document).ready(function(){
