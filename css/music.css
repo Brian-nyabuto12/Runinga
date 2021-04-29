@@ -1,0 +1,42 @@
+.jumbotron-fluid{
+
+      background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.SP3pSJHZsc8eIXhmm8Qf6AHaEK%26pid%3DApi&f=1);
+      background-size: cover;
+      font-size: large;
+      height: 150px;
+      background-repeat: no-repeat;
+    }
+    .navigation a {
+    color: white;
+    float: left;
+    width: 25%;
+    padding: 2px;
+    text-decoration: none;
+    font-size: 20px;
+    background: rgb(3, 3, 121);
+}
+
+.navigation a:hover {
+    color: white;
+    background-color: goldenrod;
+}
+
+    body{
+      background-color: black;
+      padding: 20px;
+      color:goldenrod;
+
+    }
+
+     .checked {
+    color: orange;
+} 
+
+.col-sm-3 {
+  position: relative;
+  width: 25%;
+  margin-top: 10px;
+}
+    
+
+
