@@ -26,11 +26,12 @@ h5 {
 }
 
 img {
-    height: 290px;
-    width: 270px;
+    height: 270px;
+    max-width: 100%;
 }
 
 .navigation a {
+    /* position: fixed; */
     color: white;
     float: left;
     width: 25%;
@@ -52,9 +53,14 @@ img {
 }
 
 .culture,
-#text2,
-#text3,
-#text4 {
+#txt2,
+#txt3,
+#txt4,
+#txt5,
+#txt6,
+#txt7,
+#txt8,
+#txt9 {
     position: absolute;
     display: none;
 }
@@ -74,6 +80,7 @@ button {
 .checked {
     color: orange;
 }
-#reviews{
-   
+.img{
+    height: 80px;
+    width: 100px;
 }
