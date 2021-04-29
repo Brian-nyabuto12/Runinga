@@ -67,12 +67,10 @@
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
-
         <p id="text3">When five-year-old Sulwe's classmates make fun of her dark skin, she tries lightening herself to
           no avail,
           but her encounter with a shooting star helps her understand there is beauty in every shade.</p>
       </div>
-
     </div>
     <h2>ROMANCE</h2>
     <div class="row">
@@ -158,6 +156,72 @@
           <p id="text7"></p>
         </div>
       </div>
+    </div>
+    <div id="reviews">
+      <form method="post" action="//submit.form" onSubmit="return validateForm();">
+        <div style="max-width: 400px;">
+        </div>
+        <div style="padding-bottom: 18px;font-size : 24px;">Website Review</div>
+        <div style="padding-bottom: 18px;">Reviewer<span style="color: goldenrod;"> *</span><br/>
+        <input type="text" id="data_2" name="data_2" style="max-width : 450px;" class="form-control"/>
+        </div>
+        <div style="padding-bottom: 18px;">Which page did you enjoy most?<br/>
+        <select id="data_3" name="data_3" style="max-width : 450px;" class="form-control">
+        <option>Movies</option>
+        <option>Music</option>
+        <option>Books</option>
+        <option>All</option>
+        <option>None</option>
+        </select>
+        </div>
+        <div style="padding-bottom: 18px;">Rate this website<span style="color: goldenrod;"> *</span><br/>
+        <select id="data_4" name="data_4" style="max-width : 150px;" class="form-control"><option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        </select>
+        </div>
+        <div style="padding-bottom: 18px;">Title<span style="color: goldenrod;"> *</span><br/>
+        <input type="text" id="data_5" name="data_5" style="max-width : 450px;" placeholder="eg books..." class="form-control"/>
+        </div>
+        <div style="padding-bottom: 18px;">Review<span style="color: goldenrod;"> *</span><br/>
+        <textarea id="data_8" false name="data_8" style="max-width : 450px;" rows="9" class="form-control"></textarea>
+        </div>
+        <div style="padding-bottom: 18px;">Would you recommend this website?<br/>
+        <span><input type="radio" id="data_9_0" name="data_9" value="Yes"/> Yes</span><br/>
+        <span><input type="radio" id="data_9_1" name="data_9" value="No"/> No</span><br/>
+        <span><input type="radio" id="data_9_2" name="data_9" value="I am not sure"/> I am not sure</span><br/>
+        </div>
+        <div style="padding-bottom: 18px;"><input name="skip_Submit" class="bg-primary text-white" value="Submit" type="submit"/></div>
+        <div>
+        <div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
+        <script src="https://github.com/Brian-nyabuto12/Runinga.git" type="text/javascript"></script>
+        </div>
+        </form>
+        
+        <script type="text/javascript">
+        function validateForm() {
+        if (isEmpty(document.getElementById('data_2').value.trim())) {
+        alert('Reviewer is required!');
+        return false;
+        }
+        if (isEmpty(document.getElementById('data_5').value.trim())) {
+        alert('Title is required!');
+        return false;
+        }
+        if (isEmpty(document.getElementById('data_8').value.trim())) {
+        alert('Review is required!');
+        return false;
+        }
+        return true;
+        }
+        function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+        function validateEmail(email) {
+        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+        return isEmpty(email) || re.test(email);
+        }
+        </script>
     </div>
   </div>
   <script src="js/jquery-3.6.0.js"></script>
