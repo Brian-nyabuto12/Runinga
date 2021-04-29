@@ -3,12 +3,19 @@
 }
 
 body {
-  background-color: black;
+  background-color:black;
   color: cornsilk;
   padding: 20px;
   font-family: Arial;
-  font-size: large;
+  /*font-size: small;*/
 }
+
+.col-md-4 {
+  position: relative;
+  width: 33.33%;
+  margin-top: 10px;
+}
+
 
 h1,
 h2 {
@@ -31,25 +38,16 @@ h2 {
   justify-content: center;
 }
 
-.search {
-  display: flex;
-  justify-content: flex-end;
-  margin-left: 30%;
-  height: 10%;
-  margin-top: 2%;
-}
 
-.row h4 {
-  color: goldenrod;
-  font-size: large;
-}
+
+
 
 .jumbotron-fluid {
   background-image: url(../images/image.jpg);
-
+  background-size: cover;
   background-repeat: no-repeat;
   color: goldenrod;
-  font-size: large;
+
   height: 200px;
 
 }
@@ -57,7 +55,7 @@ h2 {
 .navigation a {
   color: white;
   float: left;
-  width: 25%;
+  width: 20%;
   padding: 2px;
   text-decoration: none;
   font-size: 20px;
@@ -69,7 +67,3 @@ h2 {
   background-color: goldenrod;
 }
 
-.kama {
-  display: flex;
-  padding: 10px;
-}
