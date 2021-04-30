@@ -139,7 +139,7 @@ $(document).ready(function(){
     $("#pic1").hide(1000);
   });
  
-});
+
 $(document).ready(function(){
   $("#pic2").click(function(){
     $("#txt2").show(1000);
