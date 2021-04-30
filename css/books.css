@@ -23,8 +23,14 @@ h5 {
 
 h1,
 h2,
+h3,
+h4,
 h5 {
     color: goldenrod;
+}
+h6{
+    font-style: italic;
+    text-align: center;
 }
 h5{
     font-style: oblique;
@@ -105,7 +111,7 @@ button {
     width: 100px;
 }
 
-#reviews{
+/* #reviews{
     display: flex;
     flex-direction: row;
     height: 660px;
@@ -121,4 +127,4 @@ button {
     margin-left: auto;
     justify-content: center;
     box-shadow: 1px grey;
-  }
+  } */
