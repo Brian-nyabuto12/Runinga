@@ -14,21 +14,38 @@
   <link rel="stylesheet" href="css/books.css" type="text/css">
   <title>Runinga</title>
 </head>
-
 <body>
   <div class="container">
+    <div class="content">
     <div class="jumbotron-fluid">
-      <nav class="navigation">
+      <div id="navbar">
         <a href="index.html">Home</a>
         <a href="movies.html">Movies</a>
         <a href="music.html">Music</a>
         <a href="books.html">Books</a>
-      </nav>
+      </div>
+      <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+        <br>
       <h1>RUNINGA BOOKS</h1>
-      <h5>Click on books to read previews.</h5>
-    </div>
-    <h4>For all you bookworms, we have different genre of books for both the young and old generation.</h4>
-    <h2>CHILDREN</h2>
+    
+      </div>
+      <h5>For all you bookworms, we have different genre of books for both the young and old generation.</h5>
+      <h6>Click on books to read previews.</h6>
+      <br>
+    <h2>CHILDREN'S BOOKS</h2>
     <div class="row">
       <div class="col-md-4">
         <div class="images">
@@ -78,6 +95,7 @@
           novel is the first of the 'Dolphin Child' trilogy.</p>
       </div>
     </div>
+    <br>
     <h2>ROMANCE</h2>
     <div class="row">
       <div class="col-md-4">
@@ -128,26 +146,30 @@
           have made it to the big leagues if he wasn't tenacious. But Tenley's tough. She's falling for him, he can feel
           it, and their chemistry is off the charts. But will that be enough?</p>
       </div>
-    </div>
+    </div><br>
     <h2>BIOGRAPY</h2>
     <div class="row">
       <div class="col-md-4">
         <div class="images">
-          <img src="images/wanjiku.jpg" alt="" id="pic7" width="290px">
-          <a href="" download><button class="btn btn-primary"><i class="fa fa-download"></i> Download</button></a>
+          <img src="images/The_life_of.jpeg" alt="" id="pic7" width="290px">
+          <a href="https://www.smashwords.com/books/download/207035/1/latest/0/0/the-life-of-a-stripper-special-bonus-edition-5-exotic-dancer.pdf" download><button class="btn btn-primary"><i class="fa fa-download"></i> Download</button></a>
           </a>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star"></span>
           <span class="fa fa-star"></span>
-          <p id="txt7"></p>
+          <p id="txt7">For over 17 years, Romana Van Lissum has been a cocktail waitress in a popular Vancouver strip
+            club. She has decided to get some answers to the questions we all want to know about exotic dancers. Welcome
+            to the inside view of the world of exotic dancing. Get ready to find out the secrets, mechanics and drive
+            behind the beautiful women that take their clothes off for a living. </p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="images">
-          <img src="images/mandela.jpg" alt="" id="pic8" width="290px">
-          <a href="" download><button class="btn btn-primary"><i class="fa fa-download"></i> Download</button>
+          <img src="images/Ayesha.jpeg" alt="" id="pic8" width="290px">
+          <a href="https://www.smashwords.com/books/download/656453/1/latest/0/0/ayesha-ra.pdf" download><button
+              class="btn btn-primary"><i class="fa fa-download"></i> Download</button>
           </a>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
@@ -159,21 +181,22 @@
       </div>
       <div class="col-md-4">
         <div class="images">
-          <img src="images/Einstein.jpg" alt="" id="pic9" width="290px">
-          <a href="" download><button class="btn btn-primary"><i class="fa fa-download"></i> Download</button>
+          <img src="images/a_journey.jpeg" alt="" id="pic9" width="290px">
+          <a href="https://www.smashwords.com/books/download/925986/8/latest/0/0/a-journey-of-self-discovery.epub"
+            download><button class="btn btn-primary"><i class="fa fa-download"></i> Download</button>
           </a>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star"></span>
           <span class="fa fa-star"></span>
-          <p id="txt9"></p>
+          <p id="txt9">The inspiring story of one man's journey from low self-esteem to becoming one of the world's top
+            life and leadership coaches. </p>
         </div>
       </div>
     </div>
-
     <hr>
-
+    <h3>WEBSITE REVIEWS</h3><br>
     <div id="reviews">
       <div class="row">
         <div class="col-md-3">
@@ -184,10 +207,7 @@
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
-          <h5>Everything entertaining, exciting and educational.</h5>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto magni voluptates fugit esse non,
-            debitis maxime incidunt quis quos quam. Omnis repellat sapiente ad animi libero alias temporibus eius
-            possimus?</p>
+          <p>Everything entertaining, exciting and educational.</p>
         </div>
         <div class="col-md-3">
           <img src="images/obama.jpg" alt="" class="img">
@@ -197,10 +217,7 @@
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star"></span>
-          <h5>One site I can enjoy with my children.</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima in tempore porro quibusdam soluta, amet
-            atque, possimus, fugiat aliquam pariatur sapiente voluptas ut repudiandae blanditiis? Amet corporis
-            necessitatibus consequuntur alias?</p>
+          <p>One site I can enjoy with my children.</p>
         </div>
         <div class="col-md-3">
           <img src="images/trump1.jpg" alt="" class="img">
@@ -210,10 +227,7 @@
           <span class="fa fa-star"></span>
           <span class="fa fa-star"></span>
           <span class="fa fa-star"></span>
-          <h5>Still needs some work.</h5>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat minima, quidem quaerat voluptate rerum
-            minus exercitationem, corrupti possimus obcaecati laboriosam sed deserunt. Consequuntur nam magnam
-            voluptate, laboriosam ratione beatae explicabo.</p>
+          <p>Still needs some work.</p>
         </div>
         <div class="col-md-3">
           <img src="images/beau.jpg" alt="" class="img">
@@ -223,26 +237,19 @@
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star"></span>
-          <h5>Amazing! Amazing! Amazing!</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatum quasi, molestias hic eum
-            laudantium, perspiciatis perferendis architecto consequuntur possimus sapiente nulla at. Voluptates quia
-            asperiores vitae. Quibusdam, eius quasi!</p>
+          <p>Amazing! Amazing! Amazing!</p>
         </div>
       </div>
-    </div>
-
     <hr>
+    <div class="form">
+    <form action="https://getform.io/f/737396d5-0ea9-495b-a63c-9d3414a3225b" method="POST">
 
-    <div class="form-review">
-      <form method="post" action="//submit.form" onSubmit="return validateForm();">
-        <div style="max-width: 400px;">
+      <div style="padding-bottom: 18px;font-size : 20px;">Website Review Form</div>
+        <div style="padding-bottom: 18px; color: goldenrod;">Reviewer<span style="color: red;"> *</span><br />
+          <input type="text" id="data_2" name="data_2" style="max-width : 700px;" class="form-control" />
         </div>
-        <div style="padding-bottom: 18px;font-size : 24px;">Website Review</div>
-        <div style="padding-bottom: 18px;">Reviewer<span style="color: goldenrod;"> *</span><br />
-          <input type="text" id="data_2" name="data_2" style="max-width : 450px;" class="form-control" />
-        </div>
-        <div style="padding-bottom: 18px;">Which page did you enjoy most?<br />
-          <select id="data_3" name="data_3" style="max-width : 450px;" class="form-control">
+        <div style="padding-bottom: 18px; color: goldenrod;">Which page did you enjoy most?<br />
+          <select id="data_3" name="data_3" style="max-width : 700px;" class="form-control">
             <option>Movies</option>
             <option>Music</option>
             <option>Books</option>
@@ -250,8 +257,8 @@
             <option>None</option>
           </select>
         </div>
-        <div style="padding-bottom: 18px;">Rate this website<span style="color: goldenrod;"> *</span><br />
-          <select id="data_4" name="data_4" style="max-width : 150px;" class="form-control">
+        <div style="padding-bottom: 18px; color: goldenrod;">Rate this website<span style="color: red;"> *</span><br />
+          <select id="data_4" name="data_4" style="max-width : 700px;" class="form-control">
             <option>1</option>
             <option>2</option>
             <option>3</option>
@@ -259,14 +266,14 @@
             <option>5</option>
           </select>
         </div>
-        <div style="padding-bottom: 18px;">Title<span style="color: goldenrod;"> *</span><br />
-          <input type="text" id="data_5" name="data_5" style="max-width : 450px;" placeholder="eg books..."
+        <div style="padding-bottom: 18px; color: goldenrod;">Title<span style="color: red;"> *</span><br />
+          <input type="text" id="data_5" name="data_5" style="max-width : 700px;" placeholder="eg books..."
             class="form-control" />
         </div>
-        <div style="padding-bottom: 18px;">Review<span style="color: goldenrod;"> *</span><br />
-          <textarea id="data_8" false name="data_8" style="max-width : 450px;" rows="9" class="form-control"></textarea>
+        <div style="padding-bottom: 18px; color: goldenrod;">Review<span style="color: red;"> *</span><br />
+          <textarea id="data_8" false name="data_8" style="max-width : 700px; height: 90px;" rows="9" class="form-control"></textarea>
         </div>
-        <div style="padding-bottom: 18px;">Would you recommend this website?<br />
+        <div style="padding-bottom: 18px; color: goldenrod;">Would you recommend this website?<br />
           <span><input type="radio" id="data_9_0" name="data_9" value="Yes" /> Yes</span><br />
           <span><input type="radio" id="data_9_1" name="data_9" value="No" /> No</span><br />
           <span><input type="radio" id="data_9_2" name="data_9" value="I am not sure" /> I am not sure</span><br />
@@ -274,40 +281,12 @@
         <div style="padding-bottom: 18px;"><input name="skip_Submit" class="bg-primary text-white" value="Submit"
             type="submit" /></div>
         <div>
-          <!-- <div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">form to
-              email</a></div> -->
-          <script src="https://github.com/Brian-nyabuto12/Runinga.git" type="text/javascript"></script>
-        </div>
-      </form>
-
-      <script type="text/javascript">
-        function validateForm() {
-          if (isEmpty(document.getElementById('data_2').value.trim())) {
-            alert('Reviewer is required!');
-            return false;
-          }
-          if (isEmpty(document.getElementById('data_5').value.trim())) {
-            alert('Title is required!');
-            return false;
-          }
-          if (isEmpty(document.getElementById('data_8').value.trim())) {
-            alert('Review is required!');
-            return false;
-          }
-          return true;
-        }
-
-        function isEmpty(str) {
-          return (str.length === 0 || !str.trim());
-        }
-
-        function validateEmail(email) {
-          var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
-          return isEmpty(email) || re.test(email);
-        }
-      </script>
+    
+    </form>
+  </div>
     </div>
   </div>
+</div>
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/script.js"></script>
 </body>
