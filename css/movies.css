@@ -24,7 +24,10 @@ h2 {
   font-family: fantasy;
   margin-top: 10px;
 }
-
+p{
+  color: goldenrod;
+  font-size: large;
+}
 .card {
 
   align-content: center;
