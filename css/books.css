@@ -2,6 +2,7 @@ body {
     background-color: black;
     color: white;
 }
+
 .jumbotron-fluid {
     background-image: url(../images/library1.jpg);
     background-repeat: no-repeat;
@@ -9,24 +10,59 @@ body {
     height: 200px;
 }
 
-/* h2{
-    color: blue;
-} */
-img {
-    height: 200px;
-    width: 270px;
+h1,
+h4,
+h5 {
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px;
 }
 
-.col-sm-3 {
-    position: relative;
+h1,
+h2,
+h5 {
+    color: goldenrod;
+}
+
+img {
+    height: 270px;
+    max-width: 100%;
+}
+
+.navigation a {
+    /* position: fixed; */
+    color: white;
+    float: left;
     width: 25%;
+    padding: 2px;
+    text-decoration: none;
+    font-size: 20px;
+    background: rgb(3, 3, 121);
+}
+
+.navigation a:hover {
+    color: white;
+    background-color: goldenrod;
+}
+
+.col-sm-4 {
+    position: relative;
+    width: 33.33%;
     margin-top: 10px;
 }
 
-.culture, #text2, #text3, #text4 {
-    position: fixed;
+.culture,
+#txt2,
+#txt3,
+#txt4,
+#txt5,
+#txt6,
+#txt7,
+#txt8,
+#txt9 {
+    position: absolute;
     display: none;
-    width: 20%;
 }
 
 .images {
@@ -35,6 +71,16 @@ img {
     transition: .5s ease;
     backface-visibility: hidden;
 }
-button{
-   margin: 5px;
+
+button {
+    display: block;
+    margin: 5px;
+}
+
+.checked {
+    color: orange;
+}
+.img{
+    height: 80px;
+    width: 100px;
 }
