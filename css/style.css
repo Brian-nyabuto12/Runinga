@@ -39,7 +39,9 @@ body {
   background-size: cover;
   font-size: large;
   height: 200px;
+  
 }
+
 
 .navigation a {
   color: white;
@@ -61,8 +63,11 @@ body {
 h1,
 h2 {
   color: goldenrod;
-  text-align: center;
   font-family: fantasy;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0px;
 
 }
 
