@@ -129,7 +129,7 @@ $(document).ready(function(){
       $("#image12").hide(1000);
     });
    
-  });
+  
   $(".culture").click(function(){
     $("#pic1").show(1000);
     $(".culture").hide(1000);
@@ -220,7 +220,6 @@ $(document).ready(function(){
     $("#txt9").fadeOut(1500);
   });
 });
-<<<<<<< HEAD
 
 
 // When the user scrolls the page, execute myFunction
@@ -240,5 +239,3 @@ $(document).ready(function(){
 //     navbar.classList.remove("sticky");
 //   }
 // }
-=======
->>>>>>> 54fd4c0cd0ab350e07bc505f8d58ec268e24b3e2
