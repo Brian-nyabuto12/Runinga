@@ -1,222 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+
     <style>
         * {
-             box-sizing:border-box;
-          }
-        
-        body{
-             background-color:black;
-             color:white;
-             font-family:fantasy;
-            }
-        h1  {
-             font-family:fantasy;
-             text-align: center;
-            }
-        h2  {
-             text-align: center;
-             color:green;
-            }
-        hr  {
-             color:white;
-            }
-        div  {
-             font-size: 15px;
-             color:white;
-             
-            }
-        ul  {
-             text-align: center;
-             list-style-type:square;
-            }
-            .nav{
-                color: green;
-                text-align: start;
-            }
-            
-            
-        </style>
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: fantasy;
+        }
+
+
+        .text1,
+        .text2,
+        .text3,
+        .text4,
+        .text5,
+        .text6,
+        .text7,
+        .text8,
+        .text9,
+        .text10,
+        .text11,
+        .text12 {
+            display: none;
+            position: absolute;
+
+        }
+
+        h1 {
+            font-family: fantasy;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            color: goldenrod;
+        }
+
+
+        .col-md-4 {
+            position: relative;
+            width: 33.33%;
+            margin-top: 10px;
+        }
+
+
+
+        .jumbotron-fluid {
+            background-image: url(../images/image7.jpg);
+            background-size: cover;
+            font-size: large;
+            height: 200px;
+        }
+
+        .navigation a {
+            color: white;
+            float: left;
+            width: 25%;
+            padding: 2px;
+            text-decoration: none;
+            font-size: 20px;
+            background: rgb(3, 3, 121);
+
+
+        }
+
+        .navigation a:hover {
+            color: white;
+            background-color: goldenrod;
+        }
+
+
+
+
+
+        .search {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: 30%;
+            height: 10%;
+            margin-top: 2%;
+        }
+    </style>
     <title>review movies</title>
 </head>
+
 <body>
-    <header>
-    <div class="nav">
-        <hr/>
-      <nav>
-      
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="movies.html">Movies</a></li>
-        <li><a href="review.html">review movies</a></li>
-      
-         </ul>
-      
-      </nav>
-      <hr/>
-      </div>
-           <h2 class="headh1">scroll down to see all movies</h2>
-           <hr>
-        </header>
-         <div class="card">
-    
 
-<h2> THE CALL OF THE WILD </h2>
+    <hr>
+    <div class="container">
+        <div class="jumbotron-fluid">
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="movies.html">Movies</a>
+                <a href="music.html">Music</a>
+                <a href="books">Books</a>
+               
+            </nav>
 
-<div>
-    <p style="float: left; max-width: 20%;" ><img src="images/image1.jpg" style="max-width: 70%;"></p>
-    <p> Director: Christopher Michael Sanders</p>
-    <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog whose blissful domestic life gets turned upside down when he is suddenly uprooted from his California home and transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the newest rookie on a mail-delivery dog sled team, Buck experiences the adventure of a lifetime as he ultimately finds his true place in the world.
-    </p>
-    <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
-    <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=5P8R2zAhEwg"> CALL OF THE WILD - Official Trailer </a> </p>
-    <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
-    
+            
+        </div>
+        <h2 class="headh1">click on a movie and review</h2>
+        <br><br>
 
-</div> 
-<h2>JIUJITSU</h2>
-<div>
-    <p style="float: left; max-width: 20%;" ><img src="images/image2.jpg" style="max-width: 70%;"></p>
-    <p> Director: Dimitri Logothetis</p>
-    <p> Synopsis: Every six years, an ancient order of jiu-jitsu fighters joins forces to battle a vicious race of alien invaders. But when a celebrated war hero goes down in defeat, the fate of the planet and mankind hangs in the balance.
-    </p>
-    <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
-    <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=YhIxOqv5Cs0"> JIUJITSU- Official Trailer </a> </p>
-    <p>Starring: Alain Moussi, Frank Grillo, JuJu Chan, Tony Jaa and Nicolas Cage</p>
-    
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="images">
 
-</div>
-<h2>GHOSTBUSTERS</h2>
+                        <p id="image1" style="float: left; max-width: 100%;"><img src="images/image1.jpg"
+                                style="max-width: 90%;"></p>
+                    </div>
+                    <div class="text1">
+                        <p> Director: Christopher Michael Sanders</p>
+                        <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog whose
+                            blissful
+                            domestic life gets turned upside down when he is suddenly uprooted from his California home
+                            and
+                            transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the newest rookie on
+                            a
+                            mail-delivery dog sled team, Buck experiences the adventure of a lifetime as he ultimately
+                            finds
+                            his
+                            true place in the world.
+                        </p>
+                        <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
+                        <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=5P8R2zAhEwg"> CALL OF THE WILD -
+                                Official
+                                Trailer </a> </p>
+                        <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
 
-<div>
-    <p style="float: left; max-width: 20%;" ><img src="images/image3.jpg" style="max-width: 70%;"></p>
-    <p> Director: Christopher Michael Sanders</p>
-    <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog whose blissful domestic life gets turned upside down when he is suddenly uprooted from his California home and transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the newest rookie on a mail-delivery dog sled team, Buck experiences the adventure of a lifetime as he ultimately finds his true place in the world.
-    </p>
-    <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
-    <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=w3ugHP-yZXw"> CALL OF THE WILD - Official Trailer </a> </p>
-    <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
-    
+                    <div class="images">
 
-</div>
-<h2>AINBO</h2>
-<div>
-    <p style="float: left; max-width: 20%;" ><img src="images/image4.jpg" style="max-width: 70%;"></p>
-    <p> Director: Christopher Michael Sanders</p>
-    <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog whose blissful domestic life gets turned upside down when he is suddenly uprooted from his California home and transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the newest rookie on a mail-delivery dog sled team, Buck experiences the adventure of a lifetime as he ultimately finds his true place in the world.
-    </p>
-    <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
-    <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=fMbV1BDlmqQ"> CALL OF THE WILD - Official Trailer </a> </p>
-    <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
-    
+                        <p id="image2" style="float: left; max-width: 100%;"><img src="images/image2.jpg"
+                                style="max-width: 90%;"></p>
+                    </div>
+                    <div class="text2">
 
-</div> 
-<h2>RED HIDING HOOD</h2>
+                        <p> Director: Dimitri Logothetis</p>
+                        <p> Synopsis: Every six years, an ancient order of jiu-jitsu fighters joins forces to battle a
+                            vicious
+                            race of alien invaders. But when a celebrated war hero goes down in defeat, the fate of the
+                            planet
+                            and mankind hangs in the balance.
+                        </p>
+                        <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
+                        <p> Link To Trailer: <a href="https://www.youtube.com/embed=YhIxOqv5Cs0"> JIUJITSU- Official
+                                Trailer
+                            </a> </p>
+                        <p>Starring: Alain Moussi, Frank Grillo, JuJu Chan, Tony Jaa and Nicolas Cage</p>
+                    </div>
 
-<div>
-    <p style="float: left; max-width: 20%;" ><img src="images/image5.jpg" style="max-width: 70%;"></p>
-    <p> Director: Christopher Michael Sanders</p>
-    <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog whose blissful domestic life gets turned upside down when he is suddenly uprooted from his California home and transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the newest rookie on a mail-delivery dog sled team, Buck experiences the adventure of a lifetime as he ultimately finds his true place in the world.
-    </p>
-    <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
-    <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=xeyFoIgQKrw"> CALL OF THE WILD - Official Trailer </a> </p>
-    <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
-    
+                </div>
+                <div class="col-md-4">
+                    <div class="images">
 
-</div>
-<h2>THE MARKSMAN</h2>
-<div>
-    <p style="float: left; max-width: 20%;" ><img src="images/image6.jpg" style="max-width: 70%;"></p>
-    <p> Director: Christopher Michael Sanders</p>
-    <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog whose blissful domestic life gets turned upside down when he is suddenly uprooted from his California home and transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the newest rookie on a mail-delivery dog sled team, Buck experiences the adventure of a lifetime as he ultimately finds his true place in the world.
-    </p>
-    <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
-    <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=Ov3YPoghf4E"> CALL OF THE WILD - Official Trailer </a> </p>
-    <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
-    
+                        <p id="image3" style="float: left; max-width: 100%;"><img src="images/image3.jpg"
+                                style="max-width: 90%;"></p>
+                    </div>
+                    <div class="text3">
 
-</div>
-<h2>AVA</h2>
-<div>
-    <p style="float: left; max-width: 20%;" ><img src="images/image7.jpg" style="max-width: 70%;"></p>
-    <p> Director: Christopher Michael Sanders</p>
-    <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog whose blissful domestic life gets turned upside down when he is suddenly uprooted from his California home and transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the newest rookie on a mail-delivery dog sled team, Buck experiences the adventure of a lifetime as he ultimately finds his true place in the world.
-    </p>
-    <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
-    <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=Ov3YPoghf4E"> CALL OF THE WILD - Official Trailer </a> </p>
-    <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
-    
+                        <p> Director: Dimitri Logothetis</p>
+                        <p> Synopsis: Every six years, an ancient order of jiu-jitsu fighters joins forces to battle a
+                            vicious
+                            race of alien invaders. But when a celebrated war hero goes down in defeat, the fate of the
+                            planet
+                            and mankind hangs in the balance.
+                        </p>
+                        <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
+                        <p> Link To Trailer: <a href="https://www.youtube.com/embed=YhIxOqv5Cs0"> JIUJITSU- Official
+                                Trailer
+                            </a> </p>
+                        <p>Starring: Alain Moussi, Frank Grillo, JuJu Chan, Tony Jaa and Nicolas Cage</p>
+                    </div>
+                </div>
 
-</div> 
-<h2>CRIME AND JUSTICE</h2>
-<div>
-    <p style="float: left; max-width: 20%;" ><img src="images/image8.jpg" style="max-width: 70%;"></p>
-    <p> Director: Christopher Michael Sanders</p>
-    <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog whose blissful domestic life gets turned upside down when he is suddenly uprooted from his California home and transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the newest rookie on a mail-delivery dog sled team, Buck experiences the adventure of a lifetime as he ultimately finds his true place in the world.
-    </p>
-    <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
-    <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=CkGfBqPtIBk"> CALL OF THE WILD - Official Trailer </a> </p>
-    <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
-    
-
-</div>
-<h2>The marksman</h2>
-<div>
-    <p style="float: left; max-width: 20%;" ><img src="images/image9.jpg" style="max-width: 70%;"></p>
-    <p> Director: Christopher Michael Sanders</p>
-    <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog whose blissful domestic life gets turned upside down when he is suddenly uprooted from his California home and transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the newest rookie on a mail-delivery dog sled team, Buck experiences the adventure of a lifetime as he ultimately finds his true place in the world.
-    </p>
-    <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
-    <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=CkGfBqPtIBk"> CALL OF THE WILD - Official Trailer </a> </p>
-    <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
-    
-
-</div>
-<h2>AVENGERS</h2>
-<div>
-    <p style="float: left; max-width: 20%;" ><img src="images/image10.jpg" style="max-width: 70%;"></p>
-    <p> Director: Christopher Michael Sanders</p>
-    <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog whose blissful domestic life gets turned upside down when he is suddenly uprooted from his California home and transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the newest rookie on a mail-delivery dog sled team, Buck experiences the adventure of a lifetime as he ultimately finds his true place in the world.
-    </p>
-    <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
-    <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=6ZfuNTqbHE8"> CALL OF THE WILD - Official Trailer </a> </p>
-    <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
-    
-
-</div>
-<h2>THE WITCH</h2>
-<div>
-    <p style="float: left; max-width: 20%;" ><img src="images/image 11.jpg" style="max-width: 70%;"></p>
-    <p> Director: Christopher Michael Sanders</p>
-    <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog whose blissful domestic life gets turned upside down when he is suddenly uprooted from his California home and transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the newest rookie on a mail-delivery dog sled team, Buck experiences the adventure of a lifetime as he ultimately finds his true place in the world.
-    </p>
-    <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
-    <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=iQXmlf3Sefg"> CALL OF THE WILD - Official Trailer </a> </p>
-    <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
-    
-
-</div>
-<h2>ENCHANTED</h2>
-<div>
-    <p style="float: left; max-width: 20%;" ><img src="images/image12.jpg" style="max-width: 70%;"></p>
-    <p> Director: Christopher Michael Sanders</p>
-    <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog whose blissful domestic life gets turned upside down when he is suddenly uprooted from his California home and transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the newest rookie on a mail-delivery dog sled team, Buck experiences the adventure of a lifetime as he ultimately finds his true place in the world.
-    </p>
-    <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
-    <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=OoSUHgs7hCs"> CALL OF THE WILD - Official Trailer </a> </p>
-    <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
-    
-</div>
-
-<hr/>
-</div>
+            </div>
 
 
+            <div class="row">
+                <div class="col-md-4">
 
-    
+                    <div class="images">
+
+                        <p id="image4" style="float: left; max-width: 100%;"><img src="images/image4.jpg"
+                                style="max-width: 90%;"></p>
+                    </div>
+                    <div class="text4">
+
+                        <p> Director: Christopher Michael Sanders</p>
+                        <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog whose
+                            blissful domestic life gets turned upside down when he is suddenly uprooted from his
+                            California
+                            home and transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the newest
+                            rookie on a mail-delivery dog sled team, Buck experiences the adventure of a lifetime as he
+                            ultimately finds his true place in the world.
+                        </p>
+                        <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
+                        <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=fMbV1BDlmqQ"> CALL OF THE WILD -
+                                Official Trailer </a> </p>
+                        <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="images">
+
+                        <p id="image5" style="float: left; max-width: 100%;"><img src="images/image5.jpg"
+                                style="max-width: 90%;"></p>
+                    </div>
+                    <div class="text5">
+
+                        <p> Director: Christopher Michael Sanders</p>
+                        <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog whose
+                            blissful domestic life gets turned upside down when he is suddenly uprooted from his
+                            California
+                            home and transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the newest
+                            rookie on a mail-delivery dog sled team, Buck experiences the adventure of a lifetime as he
+                            ultimately finds his true place in the world.
+                        </p>
+                        <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
+                        <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=xeyFoIgQKrw"> CALL OF THE WILD -
+                                Official Trailer </a> </p>
+                        <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="images">
+
+                        <p id="image6" style="float: left; max-width: 100%;"><img src="images/image6.jpg"
+                                style="max-width: 90%;"></p>
+                    </div>
+                    <div class="text6">
+
+                        <p> Director: Christopher Michael Sanders</p>
+                        <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog whose
+                            blissful domestic life gets turned upside down when he is suddenly uprooted from his
+                            California
+                            home and transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the newest
+                            rookie on a mail-delivery dog sled team, Buck experiences the adventure of a lifetime as he
+                            ultimately finds his true place in the world.
+                        </p>
+                        <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
+                        <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=Ov3YPoghf4E"> CALL OF THE WILD -
+                                Official Trailer </a> </p>
+                        <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="images">
+
+                        <p id="image7" style="float: left; max-width: 100%;"><img src="images/image7.jpg"
+                                style="max-width: 90%;"></p>
+                    </div>
+                    <div class="text7">
+
+                        <p> Director: Christopher Michael Sanders</p>
+                        <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog whose
+                            blissful domestic life gets turned upside down when he is suddenly uprooted from his
+                            California
+                            home and transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the newest
+                            rookie on a mail-delivery dog sled team, Buck experiences the adventure of a lifetime as he
+                            ultimately finds his true place in the world.
+                        </p>
+                        <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
+                        <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=Ov3YPoghf4E"> CALL OF THE WILD -
+                                Official Trailer </a> </p>
+                        <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="images">
+
+                        <p id="image8" style="float: left; max-width: 100%;"><img src="images/image8.jpg"
+                                style="max-width: 90%;"></p>
+                    </div>
+                    <div class="text8">
+
+                        <p> Director: Christopher Michael Sanders</p>
+                        <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog whose
+                            blissful domestic life gets turned upside down when he is suddenly uprooted from his
+                            California
+                            home and transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the newest
+                            rookie on a mail-delivery dog sled team, Buck experiences the adventure of a lifetime as he
+                            ultimately finds his true place in the world.
+                        </p>
+                        <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
+                        <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=CkGfBqPtIBk"> CALL OF THE WILD -
+                                Official Trailer </a> </p>
+                        <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="images">
+
+                        <p id="image9" style="float: left; max-width: 100%;"><img src="images/image9.jpg"
+                                style="max-width: 90%;"></p>
+                    </div>
+                    <div class="text9">
+
+                        <p> Director: Christopher Michael Sanders</p>
+                        <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog whose
+                            blissful domestic life gets turned upside down when he is suddenly uprooted from his
+                            California
+                            home and transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the newest
+                            rookie on a mail-delivery dog sled team, Buck experiences the adventure of a lifetime as he
+                            ultimately finds his true place in the world.
+                        </p>
+                        <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
+                        <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=CkGfBqPtIBk"> CALL OF THE WILD -
+                                Official Trailer </a> </p>
+                        <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="images">
+
+                            <p id="image10" style="float: left; max-width: 100%;"><img src="images/image10.jpg"
+                                    style="max-width: 90%;"></p>
+                        </div>
+                        <div class="text10">
+
+                            <p> Director: Christopher Michael Sanders</p>
+                            <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog
+                                whose
+                                blissful domestic life gets turned upside down when he is suddenly uprooted from his
+                                California
+                                home and transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the
+                                newest
+                                rookie on a mail-delivery dog sled team, Buck experiences the adventure of a lifetime as
+                                he
+                                ultimately finds his true place in the world.
+                            </p>
+                            <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
+                            <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=6ZfuNTqbHE8"> CALL OF THE WILD
+                                    -
+                                    Official Trailer </a> </p>
+                            <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="images">
+
+                            <p id="image11" style="float: left; max-width: 100%;"><img src="images/image 11.jpg"
+                                    style="max-width: 90%;"></p>
+                        </div>
+                        <div class="text11">
+
+                            <p> Director: Christopher Michael Sanders</p>
+                            <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog
+                                whose
+                                blissful domestic life gets turned upside down when he is suddenly uprooted from his
+                                California
+                                home and transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the
+                                newest
+                                rookie on a mail-delivery dog sled team, Buck experiences the adventure of a lifetime as
+                                he
+                                ultimately finds his true place in the world.
+                            </p>
+                            <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
+                            <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=iQXmlf3Sefg"> CALL OF THE WILD
+                                    -
+                                    Official Trailer </a> </p>
+                            <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="images">
+
+                            <p id="image12" style="float: left; max-width: 100%;"><img src="images/image12.jpg"
+                                    style="max-width: 90%;"></p>
+                        </div>
+                        <div class="text12">
+
+                            <p> Director: Cistopher Michael Sanders</p>
+                            <p> Synopsis: The Call of the Wild is a vibrant story of Buck Buck is a big-hearted dog
+                                whose
+                                blissful domestic life gets turned upside down when he is suddenly uprooted from his
+                                California
+                                home and transplanted to the exotic wilds of the Alaskan Yukon in the 1890s. As the
+                                newest
+                                rookie on a mail-delivery dog sled team, Buck experiences the adventure of a lifetime as
+                                he
+                                ultimately finds his true place in the world.
+                            </p>
+                            <p> Rate Review: <input type="text" placeholder="type your review here"> </p>
+                            <p> Link To Trailer: <a href="https://www.youtube.com/watch?v=OoSUHgs7hCs"> CALL OF THE WILD
+                                    -
+                                    Official Trailer </a> </p>
+                            <p>Starring: Harrison Ford Omar ,Sy Cara Gee Dan Stevens ,Karen Gillan Bradley Whitford</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            
+     </div>
+
+            <script src="js/jquery-3.1.1.js"></script>
+            <script src="js/script.js"></script>
 </body>
+
 </html>
