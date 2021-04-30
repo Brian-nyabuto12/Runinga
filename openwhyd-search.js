@@ -1,8 +1,6 @@
-var username = 'adrien'
-var callbackFctName = 'onOpenwhydData'
-var profileUrl = 'https://openwhyd.org/' + username +'?limit=99999&callback=' + callbackFctName
-
-
+ var username = 'adrien'
+ var callbackFctName = 'onOpenwhydData'
+ var profileUrl = 'https://openwhyd.org/' + username +'?limit=99999&callback=' + callbackFctName
 
 var allTracks = []
 
@@ -27,8 +25,6 @@ function search(query) {
   }
   return results
 }
-
-
 
 var ui = (function(document, search){
 
@@ -64,8 +60,6 @@ var ui = (function(document, search){
   }
 
 })(document, search)
-
-
 
 ui.appendResult({ name: '(loading tracks from openwhyd...)' })
 window[callbackFctName] = function(json) {
