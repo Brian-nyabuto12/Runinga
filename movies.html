@@ -13,14 +13,30 @@
 <body>
 
   <div class="container">
+    <div class="content">
     <div class="jumbotron-fluid">
-      <nav class="navigation">
+      <div id="navbar">
         <a href="index.html">Home</a>
         <a href="movies.html">Movies</a>
         <a href="music.html">Music</a>
-        <a href="books.html">Books</a>
         <a href="review.html">review</a>
-    </nav>
+      </div>
+
+      <script>
+        window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+      
+      <h2>Runinga music</h2>
+
 
     
  </div>
@@ -118,6 +134,7 @@
             </div>
           </div>
       </div>
+    </div>
     
 
 

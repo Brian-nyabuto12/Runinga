@@ -12,16 +12,30 @@
 </head>
 
 <body>
-
+ 
   <div class="container">
+    <div class="content">
   <div class="jumbotron-fluid">
 
-    <nav class="navigation">
+    <div id="navbar">
       <a href="index.html">Home</a>
       <a href="movies.html">Movies</a>
       <a href="music.html">Music</a>
       <a href="books.html">Books</a>
-    </nav>
+    </div>
+
+    <script>
+      window.onscroll = function() {myFunction()};
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>
 
     <h1 class="headh1">Runinga Movies,Books and Music galore</h1>
 
@@ -60,7 +74,7 @@
   </footer>
 </div>
 
-
+</div>
 
 
 
