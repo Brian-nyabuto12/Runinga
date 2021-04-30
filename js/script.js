@@ -129,7 +129,7 @@ $(document).ready(function(){
       $("#image12").hide(1000);
     });
    
-  });
+  
   $(".culture").click(function(){
     $("#pic1").show(1000);
     $(".culture").hide(1000);
